@@ -1,0 +1,29 @@
+.movie-background-color {
+    background-color: #282531;
+    margin: 10px;
+}
+
+.image {
+    height: 100px;
+    width: 75px;
+    margin: 10px 0 10px 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #1d1b26;
+}
+
+.carouselmg {
+    margin: 25px;
+
+    justify-content: ;
+    width: 800px;
+}
+
+.navbaran {
+    display: flex;
+    justify-items: center;
+}
