@@ -1,13 +1,3 @@
-.movie-background-color {
-    background-color: #282531;
-    margin: 10px;
-}
-
-.image {
-    height: 100px;
-    width: 75px;
-    margin: 10px 0 10px 0;
-}
 html {
     scroll-behavior: smooth;
 }
@@ -16,14 +6,139 @@ body {
     background-color: #1d1b26;
 }
 
-.carouselmg {
-    margin: 25px;
-
-    justify-content: ;
-    width: 800px;
+.movie-background-color {
+    background-color: #282531;
+    margin: 8px;
 }
 
-.navbaran {
-    display: flex;
-    justify-items: center;
+.image {
+    height: 60px;
+    width: 45px;
+    margin: 40px 0px 5px 0px;
+}
+
+/* --- container --- */
+.conatiner-1 {
+    width: 670px;
+    float: right;
+}
+
+.container-2 {
+    width: 1000px;
+}
+
+/* --- carousel --- */
+.carouselmg {
+    margin-top: 10px;
+    max-width: 100%;
+
+}
+
+.carouselcontainer {}
+
+
+
+/* --- film-list --- */
+.film-list {
+    padding: 2px;
+}
+
+.film-list2 {
+    padding: 2px;
+}
+
+.film-list3 {
+    padding: 2px;
+}
+
+.film-list-background {
+    background-color: #282531;
+    padding: 5px;
+}
+
+
+/* --- poster --- */
+.poster {}
+
+/* --- cards --- */
+.card-group {}
+
+.card {
+
+    border-radius: 10px;
+}
+
+/* --- headlines --- */
+.headline {
+    border-bottom: #694ba1 0.9px solid;
+    color: #694ba1;
+    font-weight: 100px;
+    text-align: center;
+    margin: 8px 0 8px;
+}
+
+/* --- genres --- */
+body.dark .widget {
+    background: #1d1b26;
+}
+
+.widget .widget-body {
+    padding: 0px;
+}
+
+.border-bot {
+    border-bottom: #694ba1 0.9px solid;
+    color: #768483;
+    font-weight: 100px;
+    text-align: center;
+    margin: 8px 0 8px;
+}
+
+.border-bott {
+
+    color: #768483;
+    font-weight: 100px;
+    text-align: center;
+    margin: 8px 0 8px;
+}
+
+.widget .widget-title .title {
+    font-size: 1.1em;
+    font-family: "Nunito Sans", sans-serif;
+    display: inline;
+    line-height: 35px;
+    color: #694ba1;
+    font-weight: 600;
+    text-transform: uppercase;
+
+}
+
+.widget-title {
+    border-bottom: #694ba1 0.9px solid;
+    color: #694ba1;
+    font-weight: 100px;
+    text-align: center;
+    margin: 8px 0 8px;
+}
+
+a {
+    color: #694ba1;
+    text-decoration: none;
+    list-style: none;
+    padding: 5px;
+
+}
+
+li {
+    padding-left: 50px;
+}
+
+a:hover {
+
+    text-decoration: none;
+    color
+}
+
+* {
+    box-sizing: border-box;
 }
