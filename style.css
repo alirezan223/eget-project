@@ -11,11 +11,7 @@ body {
     margin: 8px;
 }
 
-.image {
-    height: 60px;
-    width: 45px;
-    margin: 40px 0px 5px 0px;
-}
+
 
 /* --- container --- */
 .conatiner-1 {
@@ -60,21 +56,46 @@ body {
 /* --- poster --- */
 .poster {}
 
-/* --- cards --- */
-.card-group {}
+/* --- topmovie --- */
+.top-movie {
+    height: 620px;
 
-.card {
-
-    border-radius: 10px;
 }
+
+.nummber1 img div {
+    font-size: 5px;
+}
+
+.image {
+    height: 95px;
+    width: 65px;
+    margin: 10px 0px 10px 0px;
+    float: left;
+}
+
+
+.top-films-icons {
+    margin-bottom: 10px;
+    font-size: 13px;
+    text-align: center;
+    margin-left: 12px;
+    display: flex;
+}
+
+.top-films-icons i {
+    padding-left: 10px;
+}
+
+.top-films-icons1 {}
 
 /* --- headlines --- */
 .headline {
     border-bottom: #694ba1 0.9px solid;
     color: #694ba1;
-    font-weight: 100px;
-    text-align: center;
+    font-weight: 10px;
+    text-align: start;
     margin: 8px 0 8px;
+    font-size: 15px;
 }
 
 /* --- genres --- */
@@ -90,8 +111,13 @@ body.dark .widget {
     border-bottom: #694ba1 0.9px solid;
     color: #768483;
     font-weight: 100px;
-    text-align: center;
+
     margin: 8px 0 8px;
+}
+
+.border-bot p {
+    float: right;
+    margin-right: 5px;
 }
 
 .border-bott {
