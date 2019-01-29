@@ -12,14 +12,14 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 
-    <title>Document</title>
+    <title>MovieDex</title>
 </head>
 
 <body>
     <!-- --- header --- -->
     <nav class="navbar navbar navbar-light" style="background-color: #0b0a0d;">
 
-        <a class="navbar-brand" style="color:aliceblue;">Navbar</a>
+        <a class="navbar-brand" style="color:aliceblue;">MovieDex</a>
         <form class="form-inline">
             <input class="form-control mr-sm-2" style="border-radius:40px;" type="search" placeholder="Search"
                 aria-label="Search" class="fas fa-search">
@@ -28,25 +28,41 @@
     </nav>
 
 
-
-
     <!-- --- navbar-items --- -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="navbaran container">
+            <i class="fas fa-user-secret" style="font-size:29px; list-style: none; padding: 5px;"></i>
             <div class="user">
-                <i class="fas fa-user-secret" style="font-size:29px; list-style: none; padding: 5px;"></i>
                 <div class="btn-group">
-                    <button type="button" class="btn btn-danger">Action</button>
-                    <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">
-                        <span class="sr-only">Toggle Dropdown</span>
+                    <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        Sign in
                     </button>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
+                        <form class="px-4 py-3">
+                            <div class="form-group">
+                                <label for="exampleDropdownFormEmail1">Email address</label>
+                                <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleDropdownFormPassword1">Password</label>
+                                <input type="password" class="form-control" id="exampleDropdownFormPassword1"
+                                    placeholder="Password">
+                            </div>
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                                    <label class="form-check-label" for="dropdownCheck">
+                                        Remember me
+                                    </label>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-danger">Sign in</button>
+                        </form>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Separated link</a>
+                        <a class="dropdown-item" href="login.html">New around here? <u>Sign up </u></a>
+                        <a class="dropdown-item" href="#">Forgot password?</a>
+
                     </div>
                 </div>
             </div>
@@ -55,8 +71,10 @@
                 aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+
+            <div class="collapse navbar-collapse " style="justify-content:center;" id="navbarNav">
+                <ul class="navbar-nav navbaran">
+
                     <li class="nav-item active">
                         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                     </li>
@@ -75,19 +93,31 @@
     </nav>
 
     <!-- --- carusel --- -->
-    <div class="conatiner-1">
-        <div class="caroselcontainer">
-            <div class="carouselmg container ">
+    <div class="container" style="max-width:1000px;">
+        <div class="container">
+            <div class="conatiner-1">
                 <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="images/autumn-3846345_1920-compressor.jpg" class="d-block w-100" alt="...">
+                            <img src="Pictures/autumn-3846345_1920-compressor.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>hello</h5>
+                                <p>world</p>
+                            </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="images/autumn-3846345_1920-compressor.jpg" class="d-block w-100" alt="...">
+                            <img src="Pictures/rsz_bleachers-1867992_1920.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>hello</h5>
+                                <p>world</p>
+                            </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="images/autumn-3846345_1920-compressor.jpg" class="d-block w-100" alt="...">
+                            <img src="Pictures/rsz_swim-422546_19201.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>hello</h5>
+                                <p>world</p>
+                            </div>
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
@@ -99,212 +129,336 @@
                         <span class="sr-only">Next</span>
                     </a>
                 </div>
-            </div>
-        </div>
 
-        <!-- --- movies --- -->
+                <!-- --- movies --- -->
 
-        <div class="container">
-            <div class="film-list-background">
-                <div class="col">
-                    <div class="film-list">
-                        <div class="card-group">
-                            <div class="card">
-                                <img src="images/poster-asta.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">text-info</p>
-                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <img src="images/poster-slime.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">text-info</p>
-                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <img src="images/movie.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">text-info</p>
-                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
-                    <!-- --- movies-section2 --- -->
-
-                    <div class="film-list2">
-                        <div class="card-group">
-                            <div class="card">
-                                <img src="images/movie2.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">text-info</p>
-                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                <div class="film-list-background">
+                    <div class="col" style="margin-top:30px;">
+                        <div class="film-list">
+                            <div class="card-group">
+                                <div class="card">
+                                    <img src="Pictures/poster-asta.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Black Clover</h5>
+                                        <p class="card-text">text-info</p>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="card">
-                                <img src="images/movie3.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">text-info</p>
-                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                <div class="card">
+                                    <img src="Pictures/poster-slime.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">That Time I Got Reincarnated as a Slime</h5>
+                                        <p class="card-text">text-info</p>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="card">
-                                <img src="images/movie4.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">text-info</p>
-                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                <div class="card">
+                                    <img src="Pictures/movie.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">text-info</p>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- --- movies-section3 --- -->
 
-                    <div class="film-list3">
-                        <div class="card-group">
-                            <div class="card">
-                                <img src="images/luffy.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">text-info</p>
-                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        <!-- --- movies-section2 --- -->
+
+                        <div class="film-list2">
+                            <div class="card-group">
+                                <div class="card">
+                                    <img src="Pictures/movie2.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">text-info</p>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="Pictures/movie3.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">text-info</p>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="Pictures/movie4.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">text-info</p>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="card">
-                                <img src="..." class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">text-info</p>
-                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                        <!-- --- movies-section3 --- -->
+
+                        <div class="film-list3">
+                            <div class="card-group">
+                                <div class="card">
+                                    <img src="Pictures/luffy.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">text-info</p>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="Pictures/arsenal.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">text-info</p>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="Pictures/naruto.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">text-info</p>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="card">
-                                <img src="images/naruto.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">text-info</p>
-                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                </div>
+                            <div class="pagination mt-2">
+                                <nav aria-label="Page navigation example">
+                                    <ul class="pagination justify-items-center">
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Previous">
+                                                <span aria-hidden="true">&laquo;</span>
+                                            </a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Next">
+                                                <span aria-hidden="true">&raquo;</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
-        <div class="pagination">
-            <nav aria-label="Page navigation example">
-                <ul class="pagination">
-                    <li class="page-item">
-                        <a class="page-link" href="#" aria-label="Previous">
-                            <span aria-hidden="true">&laquo;</span>
-                        </a>
-                    </li>
-                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item">
-                        <a class="page-link" href="#" aria-label="Next">
-                            <span aria-hidden="true">&raquo;</span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
+
+
+
+
+        <div class="container-2">
+            <div class="col col-lg-3 movie-background-color top-movie">
+                <div class="headline">
+                    <div class="widget-title"> <span class="title"><strong>Top Movies</strong></span> </div>
+                </div>
+                <div class="row border-bot">
+                    <img src="https://img.icons8.com/ios/50/000000/1.png" width="30px" height="30px" style="margin-right:4px; margin-top:10px;">
+                    <img src="Pictures/movie2.jpg" class="rounded mx-auto d-block image" alt="..."><a href="#">
+                        <p>Long Text my<br> Text</p>
+                    </a>
+                    <div class="col">
+                        <div class="top-films-icons">
+                            <i class="fas fa-heart">
+                                3,000
+                            </i> <i class="far fa-eye">
+                                4,000
+                            </i> <i class="fas fa-bookmark">
+                                300
+                            </i>
+                        </div>
+                    </div>
+
+                </div> 
+                <div class="row border-bot">
+                    <img src="https://img.icons8.com/ios/32/000000/2-circle.png" width="23px" height="23px" style="margin-right:4px; margin-top:10px;">
+                    <img src="Pictures/movie2.jpg" class="rounded mx-auto d-block image" alt="..."><a href="#">
+                        <p>Long Text my<br> Text</p>
+                    </a>
+                    <div class="col">
+                        <div class="top-films-icons">
+                            <i class="fas fa-heart">
+                                3,000
+                            </i> <i class="far fa-eye">
+                                4,000
+                            </i> <i class="fas fa-bookmark">
+                                300
+                            </i>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row border-bot">
+                    <img img src="https://img.icons8.com/ios/32/000000/3-circle.png" widsth="23px" height="23px" style="margin-right:4px; margin-top:10px;">
+                    <img src="Pictures/movie3.jpg" class="rounded mx-auto d-block image" alt="...">
+                    <a href="#">
+                        <p>Long Text my<br> Text</p>
+                    </a>
+                    <div class="col">
+                        <div class="top-films-icons">
+                            <i class="fas fa-heart">
+                                3,000
+                            </i> <i class="far fa-eye">
+                                4,000
+                            </i> <i class="fas fa-bookmark">
+                                300
+                            </i>
+                        </div>
+                    </div>
+                </div>
+                <div class="row border-bot">
+                    <img src="https://img.icons8.com/ios/32/000000/4-circle.png" widsth="23px" height="23px" style="margin-right:4px; margin-top:10px;">
+                    <img src="Pictures/movie4.jpg" class="rounded mx-auto d-block image" alt="...">
+                    <a href="#">
+                        <p>Long Text my<br> Text</p>
+                    </a>
+                    <div class="col">
+                        <div class="top-films-icons">
+                            <i class="fas fa-heart">
+                                3,000
+                            </i> <i class="far fa-eye">
+                                4,000
+                            </i> <i class="fas fa-bookmark">
+                                300
+                            </i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container col col-lg-3 movie-background-color rounded">
+                <div class="widget quickfilter">
+                    <div class="widget-title"> <span class="title">Quick Filter</span> </div>
+                    <div class="widget-body">
+                        <form class="filters " action="filter">
+                            <div class="row">
+                                <div class="col abcd">
+
+
+                                    <div class="filter dropdown text-center mt-1 mb-1"> <button class="btn abc btn-sm btn-default dropdown-toggle"
+                                            data-toggle="dropdown"> Type <span class="value" data-label-placement="true">All</span>
+                                            <i class="toggler icon icon-down-open"></i> </button>
+                                        <ul class="pull-right dropdown-menu c1">
+                                            <li> <input type="checkbox" id="type-movie" name="type[]" value="movie">
+                                                <label for="type-movie">Movie</label>
+                                            </li>
+                                            <li> <input type="checkbox" id="type-series" name="type[]" value="series">
+                                                <label for="type-series">TV
+                                                    Series</label> </li>
+                                            <li> <input type="checkbox" id="type-ova" name="type[]" value="ova"> <label
+                                                    for="type-ova">OVA</label>
+                                            </li>
+                                            <li> <input type="checkbox" id="type-ona" name="type[]" value="ona"> <label
+                                                    for="type-ona">ONA</label>
+                                            </li>
+                                            <li> <input type="checkbox" id="type-special" name="type[]" value="special">
+                                                <label for="type-special">Special</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="filter dropdown text-center mt-1 mb-1"> <button class="btn abc btn-sm btn-default dropdown-toggle"
+                                            data-toggle="dropdown"> Language <span class="value" data-label-placement="true">All</span>
+                                            <i class="toggler icon icon-down-open"></i> </button>
+                                        <ul class="pull-right dropdown-menu sort c1">
+                                            <li> <input type="checkbox" id="subbed" name="language[]" value="subbed">
+                                                <label for="subbed">Subbed</label>
+                                            </li>
+                                            <li> <input type="checkbox" id="dubbed" name="language[]" value="dubbed">
+                                                <label for="dubbed">Dubbed</label>
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                                <div class="col abcde">
+
+                                    <div class="filter dropdown text-center mt-1 mb-1"> <button class="btn abc btn-sm btn-default dropdown-toggle"
+                                            data-toggle="dropdown"> Year <span class="value" data-label-placement="true">All</span>
+                                            <i class="toggler icon icon-down-open"></i> </button>
+                                        <ul class="pull-right dropdown-menu xs c2">
+                                            <li> <input type="checkbox" id="release-2019" name="release[]" value="2019">
+                                                <label for="release-2019">2019</label>
+                                            </li>
+                                            <li> <input type="checkbox" id="release-2018" name="release[]" value="2018">
+                                                <label for="release-2018">2018</label>
+                                            </li>
+                                            <li> <input type="checkbox" id="release-2017" name="release[]" value="2017">
+                                                <label for="release-2017">2017</label>
+                                            </li>
+                                            <li> <input type="checkbox" id="release-2016" name="release[]" value="2016">
+                                                <label for="release-2016">2016</label>
+                                            </li>
+                                            <li> <input type="checkbox" id="release-2015" name="release[]" value="2015">
+                                                <label for="release-2015">2015</label>
+                                            </li>
+                                            <li> <input type="checkbox" id="release-2014" name="release[]" value="2014">
+                                                <label for="release-2014">2014</label>
+                                            </li>
+                                            <li> <input type="checkbox" id="release-2013" name="release[]" value="2013">
+                                                <label for="release-2013">2013</label>
+                                            </li>
+                                            <li> <input type="checkbox" id="release-2012" name="release[]" value="2012">
+                                                <label for="release-2012">2012</label>
+                                            </li>
+                                            <li> <input type="checkbox" id="release-2011" name="release[]" value="2011">
+                                                <label for="release-2011">2011</label>
+                                            </li>
+                                            <li> <input type="checkbox" id="release-2010" name="release[]" value="2010">
+                                                <label for="release-2010">2010</label>
+                                            </li>
+                                            <li> <input type="checkbox" id="release-2009" name="release[]" value="2009">
+                                                <label for="release-2009">2009</label>
+                                            </li>
+                                            <li> <input type="checkbox" id="release-Older" name="release[]" value="Older">
+                                                <label for="release-Older">Older</label> </li>
+                                        </ul>
+                                    </div>
+                                    <div class="filter dropdown text-center mt-1 mb-1"> <button class="btn abc btn-sm btn-default dropdown-toggle"
+                                            data-toggle="dropdown"> Sort <span class="value" data-label-placement="true">Default</span>
+                                            <i class="toggler icon icon-down-open"></i> </button>
+                                        <ul class="pull-right dropdown-menu sort c1">
+                                            <li> <input type="radio" id="default" name="sort" value="default"> <label
+                                                    for="default">Default</label>
+                                            </li>
+                                            <li> <input type="radio" id="episode_last_added_at:desc" name="sort" value="episode_last_added_at:desc">
+                                                <label for="episode_last_added_at:desc">Recently updated</label> </li>
+                                            <li> <input type="radio" id="post_date:desc" name="sort" value="post_date:desc">
+                                                <label for="post_date:desc">Recently added</label> </li>
+                                            <li> <input type="radio" id="title:asc" name="sort" value="title:asc">
+                                                <label for="title:asc">Name
+                                                    A-Z</label> </li>
+                                            <li> <input type="radio" id="views:desc" name="sort" value="views:desc">
+                                                <label for="views:desc">Most
+                                                    watched</label> </li>
+                                            <li> <input type="radio" id="scores:desc" name="sort" value="scores:desc">
+                                                <label for="scores:desc">Scores</label>
+                                            </li>
+                                            <li> <input type="radio" id="release_date:desc" name="sort" value="release_date:desc">
+                                                <label for="release_date:desc">Release date</label> </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="filter submit text-center mb-2 mt-2"> <button type="submit" class="btn filter-btn btn-sm btn-primary">
+                                        Filter</button> </div>
+                        </form>
+
+
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
 
 
 
 
-    <div class="container-2">
-        <div class="col col-lg-3 movie-background-color top-movie">
-            <div class="headline">
-                <h4>TOP FILM</h4>
-            </div>
-            <div class="card bg-dark text-white" class="nummber1">
-                <img src="images/autumn-3846345_1920-compressor.jpg" class="card-img" alt="...">
-                <div class="card-img-overlay" style="padding-top: 7px;">
-                    <img src="https://img.icons8.com/ios/50/000000/1.png" width="30px">
-                    <h5 class="card-title" style="margin-bottom: 0px;">Card title</h5>
-                    <p class="card-text" style="margin-bottom: 0px;"> </p>
-                    <p class="card-text" style="margin-bottom: 0px;">Last updated 3 mins ago</p>
-                    <div class="top-films-icons1">
-                        <i class="fas fa-heart">
-                            3,000
-                        </i> <i class="far fa-eye">
-                            4,000
-                        </i> <i class="fas fa-bookmark">
-                            300
-                        </i>
-                    </div>
-                </div>
-            </div>
-            <div class="row border-bot">
-                <img src="https://img.icons8.com/ios/32/000000/2-circle.png" width="23px" height="23px" style="margin-right:4px; margin-top:10px;">
-                <img src="images/movie2.jpg" class="rounded mx-auto d-block image" alt="..."><a href="#">
-                    <p>Long Text my<br> Text</p>
-                </a>
-                <div class="col">
-                    <div class="top-films-icons">
-                        <i class="fas fa-heart">
-                            3,000
-                        </i> <i class="far fa-eye">
-                            4,000
-                        </i> <i class="fas fa-bookmark">
-                            300
-                        </i>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="row border-bot">
-                <img img src="https://img.icons8.com/ios/32/000000/3-circle.png" widsth="23px" height="23px" style="margin-right:4px; margin-top:10px;">
-                <img src="images/movie3.jpg" class="rounded mx-auto d-block image" alt="...">
-                <a href="#">
-                    <p>Long Text my<br> Text</p>
-                </a>
-                <div class="col">
-                    <div class="top-films-icons">
-                        <i class="fas fa-heart">
-                            3,000
-                        </i> <i class="far fa-eye">
-                            4,000
-                        </i> <i class="fas fa-bookmark">
-                            300
-                        </i>
-                    </div>
-                </div>
-            </div>
-            <div class="row border-bot">
-                <img src="https://img.icons8.com/ios/32/000000/4-circle.png" widsth="23px" height="23px" style="margin-right:4px; margin-top:10px;">
-                <img src="images/movie4.jpg" class="rounded mx-auto d-block image" alt="...">
-                <a href="#">
-                    <p>Long Text my<br> Text</p>
-                </a>
-                <div class="col">
-                    <div class="top-films-icons">
-                        <i class="fas fa-heart">
-                            3,000
-                        </i> <i class="far fa-eye">
-                            4,000
-                        </i> <i class="fas fa-bookmark">
-                            300
-                        </i>
-                    </div>
-                </div>
-            </div>
-        </div>
 
         <!-- --- genres --- -->
-        <div class=" col col-lg-3 movie-background-color rounded">
+        <div class="container col col-lg-3 movie-background-color rounded">
             <div class="widget genres">
                 <div class="widget-title"> <span class="title">Genres</span> </div>
                 <div class="widget-body">
@@ -467,11 +621,12 @@
                     <div class="custom-control custom-switch">
                         <input type="checkbox" class="custom-control-input" id="customSwitch34">
                         <label class="custom-control-label" for="customSwitch34"></label>
-                        <a href="/genre/vampire" title="Vampire">Vampire</a>
+                        <a href="/genre/vampire" title="Vampire" style="margin-bottom:10px;">Vampire</a>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -484,7 +639,11 @@
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
         crossorigin="anonymous"></script>
     <script src="semantic/dist/semantic.min.js"></script>
-
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
 </body>
 
 

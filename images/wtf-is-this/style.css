@@ -30,7 +30,7 @@ body {
 
 }
 
-.container {}
+.carouselcontainer {}
 
 
 
@@ -89,15 +89,13 @@ body {
 .top-films-icons1 {}
 
 /* --- headlines --- */
-.headline h4 {
+.headline {
     border-bottom: #694ba1 0.9px solid;
     color: #694ba1;
     font-weight: 10px;
     text-align: start;
     margin: 8px 0 8px;
-    font-size: 20px;
-    display: flex;
-    flex-direction: row;
+    font-size: 15px;
 }
 
 /* --- genres --- */
@@ -149,18 +147,11 @@ body.dark .widget {
     margin: 8px 0 8px;
 }
 
-.filter-btn {
-    width: 200px;
-    color: white;
-    background-color: #694ba1;
-    border: none;
-}
-
 a {
     color: #694ba1;
     text-decoration: none;
     list-style: none;
-
+    margin: 5px;
 
 }
 
@@ -177,29 +168,6 @@ a:hover {
     color
 }
 
-
-
 * {
     box-sizing: border-box;
-}
-
-
-/* ------ filter ------ */
-
-.abcde {
-    padding-left: 13px;
-}
-
-.abcd {
-    width: 20px;
-}
-
-.abc {
-    background-color: #694ba1;
-    width: 100px;
-
-}
-
-.filter {
-    width: 100%;
 }

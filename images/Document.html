@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    
+    
+    
+
+    <title>Document</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css?_cacheOverride=1548499671339" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"><link rel="stylesheet" type="text/css" href="http://127.0.0.1:5500/semantic/dist/semantic.min.css?_cacheOverride=1548499671340"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css?_cacheOverride=1548499671340" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"><link rel="stylesheet" href="http://127.0.0.1:5500/style.css?_cacheOverride=1548499671341"></head>
+
+<body>
+    <!-- --- header --- -->
+    <nav class="navbar navbar navbar-light" style="background-color: #0b0a0d;">
+
+        <a class="navbar-brand" style="color:aliceblue;">Navbar</a>
+        <form class="form-inline">
+            <input class="form-control mr-sm-2" style="border-radius:40px;" type="search" placeholder="Search" aria-label="Search">
+
+        </form>
+    </nav>
+
+
+    <!-- --- navbar-items --- -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="navbaran container">
+            <i class="fas fa-user-secret" style="font-size:29px; list-style: none; padding: 5px;"></i>
+            <div class="user">
+                <div class="btn-group">
+                    <a href="http://127.0.0.1:5500/login.html"> <button type="button" class="btn btn-danger"> login</button></a>
+                    <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-top: 6px;margin-bottom: 7px;border-left-width: -0px;padding-left: px;margin-left: 1px;">
+                        <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Separated link</a>
+                    </div>
+                </div>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" style="justify-content:center;" id="navbarNav">
+                <ul class="navbar-nav navbaran">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- --- carusel --- -->
+    <div class="container" style="max-width:1000px;">
+        <div class="container">
+            <div class="conatiner-1">
+                <div class="caroselcontainer">
+                    <div class="carouselmg container ">
+                        <div id="carouselExampleFade" class="carousel slide carousel-fade pointer-event" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item">
+                                    <img src="Document-filer/autumn-3846345_1920-compressor.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item active">
+                                    <img src="Document-filer/autumn-3846345_1920-compressor.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Document-filer/autumn-3846345_1920-compressor.jpg" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- --- movies --- -->
+
+
+                <div class="film-list-background">
+                    <div class="col">
+                        <div class="film-list">
+                            <div class="card-group">
+                                <div class="card">
+                                    <img src="Document-filer/poster-asta.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">text-info</p>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="Document-filer/poster-slime.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">text-info</p>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="Document-filer/movie.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">text-info</p>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- --- movies-section2 --- -->
+
+                        <div class="film-list2">
+                            <div class="card-group">
+                                <div class="card">
+                                    <img src="Document-filer/movie2.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">text-info</p>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="Document-filer/movie3.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">text-info</p>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="Document-filer/movie4.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">text-info</p>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- --- movies-section3 --- -->
+
+                        <div class="film-list3">
+                            <div class="card-group">
+                                <div class="card">
+                                    <img src="Document-filer/luffy.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">text-info</p>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="Document-filer/a.html" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">text-info</p>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="Document-filer/naruto.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">text-info</p>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pagination">
+                                <nav aria-label="Page navigation example">
+                                    <ul class="pagination justify-items-center">
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Previous">
+                                                <span aria-hidden="true">«</span>
+                                            </a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Next">
+                                                <span aria-hidden="true">»</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+        <div class="container-2">
+            <div class="col col-lg-3 movie-background-color top-movie">
+                <div class="headline">
+                    <h4>TOP FILM</h4>
+                </div>
+                <div class="card bg-dark text-white">
+                    <img src="Document-filer/autumn-3846345_1920-compressor.jpg" class="card-img" alt="...">
+                    <div class="card-img-overlay" style="padding-top: 7px;">
+                        <img src="Document-filer/1.png" width="30px">
+                        <h5 class="card-title" style="margin-bottom: 0px;">Card title</h5>
+                        <p class="card-text" style="margin-bottom: 0px;"> </p>
+                        <p class="card-text" style="margin-bottom: 0px;">Last updated 3 mins ago</p>
+                        <div class="top-films-icons1">
+                            <i class="fas fa-heart">
+                                3,000
+                            </i> <i class="far fa-eye">
+                                4,000
+                            </i> <i class="fas fa-bookmark">
+                                300
+                            </i>
+                        </div>
+                    </div>
+                </div>
+                <div class="row border-bot">
+                    <img src="Document-filer/2-circle.png" style="margin-right:4px; margin-top:10px;" width="23px" height="23px">
+                    <img src="Document-filer/movie2.jpg" class="rounded mx-auto d-block image" alt="..."><a href="#">
+                        <p>Long Text my<br> Text</p>
+                    </a>
+                    <div class="col">
+                        <div class="top-films-icons">
+                            <i class="fas fa-heart">
+                                3,000
+                            </i> <i class="far fa-eye">
+                                4,000
+                            </i> <i class="fas fa-bookmark">
+                                300
+                            </i>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row border-bot">
+                    <img img="" src="Document-filer/3-circle.png" widsth="23px" style="margin-right:4px; margin-top:10px;" height="23px">
+                    <img src="Document-filer/movie3.jpg" class="rounded mx-auto d-block image" alt="...">
+                    <a href="#">
+                        <p>Long Text my<br> Text</p>
+                    </a>
+                    <div class="col">
+                        <div class="top-films-icons">
+                            <i class="fas fa-heart">
+                                3,000
+                            </i> <i class="far fa-eye">
+                                4,000
+                            </i> <i class="fas fa-bookmark">
+                                300
+                            </i>
+                        </div>
+                    </div>
+                </div>
+                <div class="row border-bot">
+                    <img src="Document-filer/4-circle.png" widsth="23px" style="margin-right:4px; margin-top:10px;" height="23px">
+                    <img src="Document-filer/movie4.jpg" class="rounded mx-auto d-block image" alt="...">
+                    <a href="#">
+                        <p>Long Text my<br> Text</p>
+                    </a>
+                    <div class="col">
+                        <div class="top-films-icons">
+                            <i class="fas fa-heart">
+                                3,000
+                            </i> <i class="far fa-eye">
+                                4,000
+                            </i> <i class="fas fa-bookmark">
+                                300
+                            </i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- --- genres --- -->
+            <div class=" col col-lg-3 movie-background-color rounded">
+                <div class="widget genres">
+                    <div class="widget-title"> <span class="title">Genres</span> </div>
+                    <div class="widget-body">
+
+                        <div class="custom-control custom-switch" style="">
+                            <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                            <label class="custom-control-label" for="customSwitch1"></label>
+                            <a href="http://127.0.0.1:5500/genre/action" title="Action">Action</a>
+                        </div>
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="customSwitch2">
+                            <label class="custom-control-label" for="customSwitch2"></label>
+                            <a href="http://127.0.0.1:5500/genre/adventure" title="Adventure">Adventure</a>
+                        </div>
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="customSwitch3">
+                            <label class="custom-control-label" for="customSwitch3"></label>
+                            <a href="http://127.0.0.1:5500/genre/cars" title="Cars">Cars</a>
+                        </div>
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="customSwitch4">
+                            <label class="custom-control-label" for="customSwitch4"></label>
+                            <a href="http://127.0.0.1:5500/genre/comedy" title="Comedy">Comedy</a>
+                        </div>
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="customSwitch5">
+                            <label class="custom-control-label" for="customSwitch5"></label>
+                            <a href="http://127.0.0.1:5500/genre/demons" title="Demons">Demons</a>
+                        </div>
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="customSwitch6">
+                            <label class="custom-control-label" for="customSwitch6"></label>
+                            <a href="http://127.0.0.1:5500/genre/drama" title="Drama">Drama</a>
+                        </div>
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="customSwitch6">
+                            <label class="custom-control-label" for="customSwitch6"></label>
+                            <a href="http://127.0.0.1:5500/genre/drama" title="Drama">Drama</a>
+                        </div>
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="customSwitch7">
+                            <label class="custom-control-label" for="customSwitch7"></label>
+                            <a href="http://127.0.0.1:5500/genre/fantasy" title="Fantasy">Fantasy</a>
+                        </div>
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="customSwitch8">
+                            <label class="custom-control-label" for="customSwitch8"></label>
+                            <a href="http://127.0.0.1:5500/genre/game" title="Game">Game</a>
+                        </div>
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="customSwitch9">
+                            <label class="custom-control-label" for="customSwitch9"></label>
+                            <a href="http://127.0.0.1:5500/genre/harem" title="Harem">Harem</a>
+                        </div>
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="customSwitch10">
+                            <label class="custom-control-label" for="customSwitch10"></label>
+                            <a href="http://127.0.0.1:5500/genre/historical" title="Historical">Historical</a>
+                        </div>
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="customSwitch11">
+                            <label class="custom-control-label" for="customSwitch11"></label>
+                            <a href="http://127.0.0.1:5500/genre/horror" title="Horror">Horror</a>
+                        </div>
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="customSwitch13">
+                            <label class="custom-control-label" for="customSwitch13"></label>
+                            <a href="http://127.0.0.1:5500/genre/magic" title="Magic">Magic</a>
+                        </div>
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="customSwitch14">
+                            <label class="custom-control-label" for="customSwitch14"></label>
+                            <a href="http://127.0.0.1:5500/genre/martial-arts" title="Martial Arts">Martial Arts</a>
+                        </div>
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="customSwitch15">
+                            <label class="custom-control-label" for="customSwitch15"></label>
+                            <a href="http://127.0.0.1:5500/genre/mecha" title="Mecha">Mecha</a>
+                        </div>
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="customSwitch16">
+                            <label class="custom-control-label" for="customSwitch16"></label>
+                            <a href="http://127.0.0.1:5500/genre/military" title="Military">Military</a>
+                        </div>
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="customSwitch17">
+                            <label class="custom-control-label" for="customSwitch17"></label>
+                            <a href="http://127.0.0.1:5500/genre/music" title="Music">Music</a>
+                        </div>
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="customSwitch18">
+                            <label class="custom-control-label" for="customSwitch18"></label>
+                            <a href="http://127.0.0.1:5500/genre/mystery" title="Mystery">Mystery</a>
+                        </div>
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="customSwitch19">
+                            <label class="custom-control-label" for="customSwitch19"></label>
+                            <a href="http://127.0.0.1:5500/genre/parody" title="Parody">Parody</a>
+                        </div>
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="customSwitch20">
+                            <label class="custom-control-label" for="customSwitch20"></label>
+                            <a href="http://127.0.0.1:5500/genre/police" title="Police">Police</a>
+                        </div>
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="customSwitch22">
+                            <label class="custom-control-label" for="customSwitch22"></label>
+                            <a href="http://127.0.0.1:5500/genre/psychological" title="Psychological">Psychological</a>
+                        </div>
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="customSwitch23">
+                            <label class="custom-control-label" for="customSwitch23"></label>
+                            <a href="http://127.0.0.1:5500/genre/romance" title="Romance">Romance</a>
+                        </div>
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="customSwitch24">
+                            <label class="custom-control-label" for="customSwitch24"></label>
+                            <a href="http://127.0.0.1:5500/genre/samurai" title="Samurai">Samurai</a>
+                        </div>
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="customSwitch25">
+                            <label class="custom-control-label" for="customSwitch25"></label>
+                            <a href="http://127.0.0.1:5500/genre/school" title="School">School</a>
+                        </div>
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="customSwitch26">
+                            <label class="custom-control-label" for="customSwitch26"></label>
+                            <a href="http://127.0.0.1:5500/genre/sci-fi" title="Sci-Fi">Sci-Fi</a>
+                        </div>
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="customSwitch27">
+                            <label class="custom-control-label" for="customSwitch27"></label>
+                            <a href="http://127.0.0.1:5500/genre/slice-of-life" title="Slice of Life">Slice of Life</a>
+                        </div>
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="customSwitch28">
+                            <label class="custom-control-label" for="customSwitch28"></label>
+                            <a href="http://127.0.0.1:5500/genre/space" title="Space">Space</a>
+                        </div>
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="customSwitch29">
+                            <label class="custom-control-label" for="customSwitch29"></label>
+                            <a href="http://127.0.0.1:5500/genre/sports" title="Sports">Sports</a>
+                        </div>
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="customSwitch30">
+                            <label class="custom-control-label" for="customSwitch30"></label>
+                            <a href="http://127.0.0.1:5500/genre/super-power" title="Super Power">Super Power</a>
+                        </div>
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="customSwitch32">
+                            <label class="custom-control-label" for="customSwitch32"></label>
+                            <a href="http://127.0.0.1:5500/genre/supernatural" title="Supernatural">Supernatural</a>
+                        </div>
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="customSwitch33">
+                            <label class="custom-control-label" for="customSwitch33"></label>
+                            <a href="http://127.0.0.1:5500/genre/thriller" title="Thriller">Thriller</a>
+                        </div>
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="customSwitch34">
+                            <label class="custom-control-label" for="customSwitch34"></label>
+                            <a href="http://127.0.0.1:5500/genre/vampire" title="Vampire">Vampire</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="Document-filer/jquery-3_002.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="Document-filer/popper.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="Document-filer/bootstrap.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <!-- ------ -->
+    <script src="Document-filer/jquery-3.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="Document-filer/semantic.html"></script>
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					head.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					head.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
