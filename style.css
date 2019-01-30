@@ -19,9 +19,7 @@ body {
     float: right;
 }
 
-.container-2 {
-    width: 1000px;
-}
+.container-2 {}
 
 /* --- carousel --- */
 .carouselmg {
@@ -58,7 +56,7 @@ body {
 
 /* --- topmovie --- */
 .top-movie {
-    height: 620px;
+    height: 720px;
 
 }
 
@@ -88,17 +86,6 @@ body {
 
 .top-films-icons1 {}
 
-/* --- headlines --- */
-.headline h4 {
-    border-bottom: #694ba1 0.9px solid;
-    color: #694ba1;
-    font-weight: 10px;
-    text-align: start;
-    margin: 8px 0 8px;
-    font-size: 20px;
-    display: flex;
-    flex-direction: row;
-}
 
 /* --- genres --- */
 body.dark .widget {
@@ -114,12 +101,12 @@ body.dark .widget {
     color: #768483;
     font-weight: 100px;
 
-    margin: 8px 0 8px;
 }
 
 .border-bot p {
     float: right;
-    margin-right: 5px;
+    padding-left: 15px;
+    padding-top: 15px;
 }
 
 .border-bott {
@@ -127,7 +114,7 @@ body.dark .widget {
     color: #768483;
     font-weight: 100px;
     text-align: center;
-    margin: 8px 0 8px;
+
 }
 
 .widget .widget-title .title {
@@ -150,7 +137,7 @@ body.dark .widget {
 }
 
 a {
-    color: #694ba1;
+    color: gray;
     text-decoration: none;
     list-style: none;
 
@@ -158,10 +145,11 @@ a {
 }
 
 
+
 .page-item {
     margin: 0;
     padding: 0;
-    0
+
 }
 
 a:hover {
@@ -172,4 +160,125 @@ a:hover {
 
 * {
     box-sizing: border-box;
+}
+
+/* --------- top film navbar---------- */
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: transparent;
+    overflow: hidden;
+    margin-left: 15px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: peru;
+    text-align: center;
+    padding: 5px 16px;
+    margin-left: 12px;
+    text-decoration: none;
+    font-size: 13px;
+    border-bottom: 3px solid transparent;
+}
+
+.topnav a:hover {
+    border-bottom: 3px solid red;
+}
+
+.topnav a.active {
+    border-bottom: 3px solid red;
+}
+
+/* --- headlines --- */
+.headline h4 {
+    border-bottom: #694ba1 0.9px;
+    color: #694ba1;
+    font-weight: 10px;
+    text-align: start;
+    margin: 8px 0 8px;
+    font-size: 23px;
+    display: flex;
+    flex-direction: row;
+}
+
+/* --- order --- */
+
+.order1-4 .col {
+    margin-top: 5px;
+}
+
+.top-films-icons {
+    margin-top: 86px;
+
+    font-size: 11px;
+    color: peru;
+}
+
+.top-films-icons a {
+    color: peru;
+}
+
+.top-films-icons a:hover {
+    color: #694ba1;
+}
+
+/* --- q-filter --- */
+.q-filter {
+    margin-top: 10px;
+
+}
+
+.q-filterr {}
+
+.filter-h4 {
+    border-bottom: #694ba1 0.9px solid;
+    color: #694ba1;
+    font-weight: 100px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    font-family: "Nunito Sans", sans-serif;
+    line-height: 35px;
+    color: #694ba1;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* ---  --- */
+
+/* --- footer --- */
+.chip {
+    display: inline-block;
+    padding: 0 25px;
+    height: 50px;
+    font-size: 16px;
+    line-height: 50px;
+    border-radius: 25px;
+    background-color: #f1f1f1;
+}
+
+.chip img {
+    float: left;
+    margin: 0 10px 0 -25px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.admin-h4 {
+    border-bottom: #694ba1 0.9px solid;
+    color: #694ba1;
+    font-weight: 100px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    font-family: "Nunito Sans", sans-serif;
+    line-height: 35px;
+    color: #694ba1;
+    font-weight: 600;
+    text-transform: uppercase;
 }
