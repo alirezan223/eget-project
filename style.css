@@ -28,7 +28,7 @@ body {
 
 }
 
-.carouselcontainer {}
+.container {}
 
 
 
@@ -136,6 +136,13 @@ body.dark .widget {
     margin: 8px 0 8px;
 }
 
+.filter-btn {
+    width: 200px;
+    color: white;
+    background-color: #694ba1;
+    border: none;
+}
+
 a {
     color: gray;
     text-decoration: none;
@@ -157,6 +164,8 @@ a:hover {
     text-decoration: none;
     color
 }
+
+
 
 * {
     box-sizing: border-box;
